@@ -1,0 +1,1022 @@
+{
+  "intents": [
+    {
+      "intent": "dicas",
+      "examples": [
+        {
+          "text": "alguma dica?"
+        },
+        {
+          "text": "dicas"
+        },
+        {
+          "text": "gostaria de ter dicas"
+        },
+        {
+          "text": "poderia me dar dicas?"
+        },
+        {
+          "text": "quero dicas"
+        },
+        {
+          "text": "quero ter dicas"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "reset",
+      "examples": [
+        {
+          "text": "fim"
+        },
+        {
+          "text": "reset"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "saudação",
+      "examples": [
+        {
+          "text": "coé"
+        },
+        {
+          "text": "eae"
+        },
+        {
+          "text": "iae"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "olá"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "consulta_apag",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Histórico da APAG",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Saldo da APAG",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "consulta_cartao_atacadao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Data da Última Compra",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Fatura do Cartão",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "escolha_pagamento",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Boleto",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cartão Atacadão",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Empréstimo Pessoal",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Saldo APAG",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "opcao_menu",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Encerrar Atendimento",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Voltar para menu de opções",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "opções",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "0",
+          "synonyms": [
+            "0"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "1",
+          "synonyms": [
+            "1"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "10",
+          "synonyms": [
+            "10"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "2",
+          "synonyms": [
+            "2"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "3",
+          "synonyms": [
+            "3"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "4",
+          "synonyms": [
+            "4"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "5",
+          "synonyms": [
+            "5"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "6",
+          "synonyms": [
+            "6"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "7",
+          "synonyms": [
+            "7"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "8",
+          "synonyms": [
+            "8"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "9",
+          "synonyms": [
+            "9"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "fim",
+          "synonyms": [
+            "fim",
+            "final",
+            "finalizar",
+            "terminar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "reset",
+          "synonyms": [
+            "recomeçar",
+            "reset",
+            "resetar"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "opcoes_consulta",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "APAG",
+          "synonyms": [
+            "maquininha APAG"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Cartao Atacadão",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Empréstimo",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sugestão de Compra",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sim-nao",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "nao",
+          "synonyms": [
+            "não"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "sim",
+          "synonyms": [
+            "claro",
+            "lógico",
+            "ok",
+            "positivo",
+            "sim",
+            "tá",
+            "vamos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, eu sou João o assistente virtual do Cartão Atacadão e vou te ajudar a ver suas informações.\n\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1623122697387"
+      },
+      "conditions": "#reset || #saudação || welcome && true",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_9_1623282071856",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1639255309753",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1639255309778",
+      "previous_sibling": "handler_9_1639255309778"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1639255422282",
+      "context": {
+        "opcao_menu__Encerrar": "@opcao_menu:(Encerrar Atendimento)"
+      },
+      "conditions": "@opcao_menu:(Encerrar Atendimento)",
+      "event_name": "input",
+      "dialog_node": "handler_5_1639255422306"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1639254568711",
+      "context": {
+        "consulta_apag": "@consulta_apag"
+      },
+      "conditions": "@consulta_apag",
+      "event_name": "input",
+      "dialog_node": "handler_7_1639254568721"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1639254568711",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1639254568721",
+      "previous_sibling": "handler_7_1639254568721"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1639255309753",
+      "context": {
+        "opcao_menu": "@opcao_menu"
+      },
+      "conditions": "@opcao_menu",
+      "event_name": "input",
+      "dialog_node": "handler_9_1639255309778"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1639255422282",
+      "event_name": "focus",
+      "dialog_node": "handler_9_1639255422306",
+      "previous_sibling": "handler_5_1639255422306"
+    },
+    {
+      "type": "standard",
+      "title": "Consulta Cartão Atacadão",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ótimo! O que deseja consultar sobre seu <b>Cartão Atacadão</b>?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Escolha uma opção",
+            "options": [
+              {
+                "label": "1. Fatura do Cartão",
+                "value": {
+                  "input": {
+                    "text": "Fatura do Cartão"
+                  }
+                }
+              },
+              {
+                "label": "2. Data da Última Compra",
+                "value": {
+                  "input": {
+                    "text": "Data da Última Compra"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1623122697387",
+      "conditions": "@opcoes_consulta:(Cartao Atacadão)",
+      "dialog_node": "node_10_1623122003380"
+    },
+    {
+      "type": "standard",
+      "title": "Fatura do Cartão",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu <b>Cartão Atacadão</b> vencerá 20/12/2021 e está com valor para pagar de R$ 1250,00.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Escolha uma opção",
+            "options": [
+              {
+                "label": "0. Voltar para menu de opções",
+                "value": {
+                  "input": {
+                    "text": "Voltar para menu de opções"
+                  }
+                }
+              },
+              {
+                "label": "1. Encerrar Atendimento",
+                "value": {
+                  "input": {
+                    "text": "Encerrar Atendimento"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1623122003380",
+      "conditions": "@consulta_cartao_atacadao:(Fatura do Cartão)",
+      "dialog_node": "node_10_1623277448612"
+    },
+    {
+      "type": "standard",
+      "title": "Consulta Sugestão Compras",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<p>Ótimo, segue abaixo sua lista de compras sugeridas com base em seu padrão de consumo:\n\n<p>- 5 Massa de Pastel resfriada rolo 1kg (R$ 8,74 /UN)\n<p>- 2 Peças de Queijo Mussarela - peça por kg (R$ 25,76 /KG)\n<p>- 10 Refrigerante Guaraná lata 350ml - Antarctica (R$ 2,09 /UN)\n<p>- 10 Refrigerante lata 350ml - Coca Cola (R$ 2,46 /UN)\n<p>- 2 Caixa de Ketchup Tradicional caixa 168 unidades de 7g - Hellmann's (R$ 19,50 /CX)\n\nValor total: <b>R$ 179,72</b>."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Deseja efetuar a compra automática?",
+            "options": [
+              {
+                "label": "1. Sim",
+                "value": {
+                  "input": {
+                    "text": "Sim"
+                  }
+                }
+              },
+              {
+                "label": "2. Não",
+                "value": {
+                  "input": {
+                    "text": "Não"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1623122697387",
+      "conditions": "@opcoes_consulta:(Sugestão de Compra)",
+      "dialog_node": "node_10_1639248730683",
+      "previous_sibling": "node_6_1639248679065"
+    },
+    {
+      "type": "standard",
+      "title": " Saldo APAG",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu saldo da <b>APAG</b> é de R$ 420,00."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Escolha uma opção",
+            "options": [
+              {
+                "label": "0. Voltar para menu de opções",
+                "value": {
+                  "input": {
+                    "text": "Voltar para menu de opções"
+                  }
+                }
+              },
+              {
+                "label": "1. Encerrar Atendimento",
+                "value": {
+                  "input": {
+                    "text": "Encerrar Atendimento"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1639248014001",
+      "conditions": "@consulta_apag:(Saldo da APAG)",
+      "dialog_node": "node_3_1639249444372",
+      "previous_sibling": "slot_1_1639254568711"
+    },
+    {
+      "type": "standard",
+      "title": "Forma Pagamento - Compra",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Seu pagamento será feito pelo $forma_pagamento."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Escolha uma opção",
+            "options": [
+              {
+                "label": "0. Voltar para menu de opções",
+                "value": {
+                  "input": {
+                    "text": "Voltar para menu de opções"
+                  }
+                }
+              },
+              {
+                "label": "1. Encerrar Atendimento",
+                "value": {
+                  "input": {
+                    "text": "Encerrar Atendimento"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1639253902437",
+      "context": {
+        "forma_pagamento": "@escolha_pagamento.literal"
+      },
+      "conditions": "@escolha_pagamento",
+      "dialog_node": "node_3_1639256383002"
+    },
+    {
+      "type": "standard",
+      "title": "Data_Compra",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A data da sua última compra com <b>Cartão Atacadão</b> foi 04/12/2021.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Escolha uma opção",
+            "options": [
+              {
+                "label": "0. Voltar para menu de opções",
+                "value": {
+                  "input": {
+                    "text": "Voltar para menu de opções"
+                  }
+                }
+              },
+              {
+                "label": "1. Encerrar Atendimento",
+                "value": {
+                  "input": {
+                    "text": "Encerrar Atendimento"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1623122003380",
+      "conditions": "@consulta_cartao_atacadao:(Data da Última Compra)",
+      "dialog_node": "node_4_1639247874192",
+      "previous_sibling": "node_10_1623277448612"
+    },
+    {
+      "type": "standard",
+      "title": "Consulta Empréstimo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Você possui um limite de R$20.000,00 para <b>empréstimo</b>.\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Escolha uma opção",
+            "options": [
+              {
+                "label": "0. Voltar para menu de opções",
+                "value": {
+                  "input": {
+                    "text": "Voltar para menu de opções"
+                  }
+                }
+              },
+              {
+                "label": "1. Encerrar Atendimento",
+                "value": {
+                  "input": {
+                    "text": "Encerrar Atendimento"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1623122697387",
+      "conditions": "@opcoes_consulta:Empréstimo",
+      "dialog_node": "node_6_1639248679065",
+      "previous_sibling": "node_9_1639248014001"
+    },
+    {
+      "type": "standard",
+      "title": "Selecionar Opção de Consulta",
+      "output": {
+        "generic": [
+          {
+            "title": "Escolha uma opção",
+            "options": [
+              {
+                "label": "1. Cartão Atacadão",
+                "value": {
+                  "input": {
+                    "text": "Cartão Atacadão"
+                  }
+                }
+              },
+              {
+                "label": "2. APAG",
+                "value": {
+                  "input": {
+                    "text": "APAG"
+                  }
+                }
+              },
+              {
+                "label": "3. Empréstimo",
+                "value": {
+                  "input": {
+                    "text": "Empréstimo"
+                  }
+                }
+              },
+              {
+                "label": "4. Sugestão de Compras",
+                "value": {
+                  "input": {
+                    "text": "Sugestão de Compras"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": " @opcao_menu:(Voltar para menu de opções)",
+      "dialog_node": "node_7_1623122697387",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Histórico APAG",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Este é seu Histórico de Compras na <b>APAG</b>:\n\n09/12/2021: 1 Coca-Cola 2L\n04/12/2021: 1 Pacote 5KG Arroz\n29/11/2021: 3 Pacote Macarrão"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Escolha uma opção",
+            "options": [
+              {
+                "label": "0. Voltar para menu de opções",
+                "value": {
+                  "input": {
+                    "text": "Voltar para menu de opções"
+                  }
+                }
+              },
+              {
+                "label": "1. Encerrar Atendimento",
+                "value": {
+                  "input": {
+                    "text": "Encerrar Atendimento"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_9_1639248014001",
+      "conditions": "@consulta_apag:(Histórico da APAG)",
+      "dialog_node": "node_7_1639253715501",
+      "previous_sibling": "node_3_1639249444372"
+    },
+    {
+      "type": "standard",
+      "title": "Sugestão Compras  - Não",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tudo bem, você poderá consultar novamente a sugestão de compras quando quiser."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Escolha uma opção",
+            "options": [
+              {
+                "label": "0. Voltar para menu de opções",
+                "value": {
+                  "input": {
+                    "text": "Voltar para menu de opções"
+                  }
+                }
+              },
+              {
+                "label": "1. Encerrar Atendimento",
+                "value": {
+                  "input": {
+                    "text": "Encerrar Atendimento"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1639248730683",
+      "conditions": "@sim-nao:nao",
+      "dialog_node": "node_7_1639253984015",
+      "previous_sibling": "node_9_1639253902437"
+    },
+    {
+      "type": "frame",
+      "title": "Fim da conversa",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Parece que acabamos por aqui.\n\nFoi um prazer te conhecer, estarei aqui sempre que precisar de ajuda.\n<p>Conheça também o nosso <b>APP</b> para poder ver ofertas e nossos produtos.\n\n<p><a href=\"https://apps.apple.com/br/app/cartão-de-crédito-atacadão/id1170586071\">Cartão Atacadão - App Store</a>\n\n<p><a href=\"https://play.google.com/store/apps/details?id=br.com.carrefour.cartaoatacadao&hl=pt_BR&gl=US\">Cartão Atacadão - Google Play</a>\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@opcao_menu:(Encerrar Atendimento)",
+      "dialog_node": "node_9_1623282071856",
+      "previous_sibling": "node_7_1623122697387"
+    },
+    {
+      "type": "frame",
+      "title": "Consulta APAG",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ótimo! O que deseja consultar sobre a maquininha <b>APAG</b>?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Escolha uma opção",
+            "options": [
+              {
+                "label": "1. Saldo da APAG",
+                "value": {
+                  "input": {
+                    "text": "Saldo da APAG"
+                  }
+                }
+              },
+              {
+                "label": "2. Histórico da APAG",
+                "value": {
+                  "input": {
+                    "text": "Histórico da APAG"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1623122697387",
+      "conditions": "@opcoes_consulta:APAG",
+      "dialog_node": "node_9_1639248014001",
+      "previous_sibling": "node_10_1623122003380"
+    },
+    {
+      "type": "standard",
+      "title": "Sugestão Compras  - Sim",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Que ótimo, agradecemos a confiança. Qual a forma do pagamento:"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Forma do pagamento",
+            "options": [
+              {
+                "label": "1. Boleto",
+                "value": {
+                  "input": {
+                    "text": "Boleto"
+                  }
+                }
+              },
+              {
+                "label": "2. Cartão Atacadão",
+                "value": {
+                  "input": {
+                    "text": "Cartão Atacadão"
+                  }
+                }
+              },
+              {
+                "label": "3. Saldo APAG",
+                "value": {
+                  "input": {
+                    "text": "Saldo APAG"
+                  }
+                }
+              },
+              {
+                "label": "4. Empréstimo Pessoal",
+                "value": {
+                  "input": {
+                    "text": "Empréstimo Pessoal"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_10_1639248730683",
+      "context": {},
+      "conditions": "@sim-nao:sim",
+      "dialog_node": "node_9_1639253902437"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1639248014001",
+      "variable": "$consulta_apag",
+      "dialog_node": "slot_1_1639254568711"
+    },
+    {
+      "type": "slot",
+      "parent": "node_10_1623277448612",
+      "variable": "$opcao_menu",
+      "dialog_node": "slot_9_1639255309753"
+    },
+    {
+      "type": "slot",
+      "parent": "node_9_1623282071856",
+      "variable": "$opcao_menu__Encerrar",
+      "dialog_node": "slot_9_1639255422282"
+    }
+  ],
+  "counterexamples": [
+    {
+      "text": "Empréstimo"
+    },
+    {
+      "text": "Fatura do Cartão"
+    }
+  ],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Bot_Atacadao",
+  "language": "pt-br",
+  "description": "ChatBot utilizado para o Cartão Atacadão."
+}
